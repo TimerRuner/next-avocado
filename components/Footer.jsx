@@ -8,15 +8,19 @@ const Footer = () => {
             <div className={styles.cardL}>
                 <h1 className={styles.title}>AVOCADO CREATIVES</h1>
                 <h2 className={styles.linkTitle}>
-                    <a href="/contact" passHref className={styles.link}>
-                        <span className={styles.linkText}>WORK WITH US</span>
-                        <Image
-                            src="/img/link.png"
-                            width="40"
-                            height="40"
-                            alt="footer"
-                        />
-                    </a>
+                    <Link href="/contact" passHref className={styles.link}>
+                        <a>
+                            <span className={styles.linkText}>
+                                WORK WITH US
+                            </span>
+                            <Image
+                                src="/img/link.png"
+                                width="40"
+                                height="40"
+                                alt="footer"
+                            />
+                        </a>
+                    </Link>
                 </h2>
             </div>
             <div className={styles.cardS}>
