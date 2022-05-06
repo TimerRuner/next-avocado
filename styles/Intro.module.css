@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.card {
+    flex: 1;
+    padding: 100px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.title {
+    font-size: 50px;
+    margin: 0;
+}
+
+.brand {
+    color: green;
+}
+
+.descr {
+    font-size: 20px;
+    margin: 0;
+}
+
+.button {
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+    .card {
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .desc {
+        display: none;
+    }
+    .title {
+        font-size: 30px;
+    }
+}
